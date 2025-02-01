@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    color: black;
+    font-size: 24px;
+}
+
+.unauth {
+    visibility: visible;
+}
+
+.auth {
+    visibility: collapse;
+}
+
+.header__inner {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-link{
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.signin-link {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+
+.signup-link,
+.logout-link {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.user-name {
+    color: white;
+    width: 500;
+}
+
+.main__inner{
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.main-title{
+    margin: 100px 0 80px;
+    max-width: 1000px;
+}
+
+.title-text{
+    font-size: 48px;
+    width: 700;
+    margin-bottom: 10px;
+}
+
+.title-author{
+    font-size: 30px;
+    color: grey;
+}
+
+.content-list{
+
+}
+
+.content-item{
+    width: 100%;
+}
+
+.content-item + .content-item{
+    padding-top: 50px;
+}
+
+.item-link{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.item-img{
+    width: 300px;
+}
+
+.item-text{
+    margin: 0 20px 0;
+}
+
+.cite-text{
+    margin-bottom: 30px;
+}
+
+.cite-author{
+    color: grey;
+    font-size: 22px;
+}
