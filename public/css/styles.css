@@ -19,9 +19,14 @@ a {
     color: inherit;
 }
 
+button {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
 .container {
-    color: black;
     font-size: 24px;
+    color: black;
 }
 
 .unauth {
@@ -87,13 +92,13 @@ a {
     max-width: 1000px;
 }
 
-.title-text {
+.title {
     font-size: 48px;
     width: 700;
     margin-bottom: 10px;
 }
 
-.title-author {
+.subtitle {
     font-size: 30px;
     color: grey;
 }
@@ -152,4 +157,56 @@ a {
 .cite-author {
     color: grey;
     font-size: 22px;
+}
+
+
+.cite-details__inner {
+    width: 42%;
+    margin: 80px 5% 50px 6%;
+}
+
+.cite-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cite-details__inner .cite-text {
+    font-size: 34px;
+}
+
+.cite-details__inner .cite-author {
+    font-size: 28px;
+}
+
+
+.panel-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.copy-btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    width: 200px;
+    background: white;
+    border: 3px solid black;
+}
+
+.mark-btn {
+    background: white;
+    border: none;
+    width: 50px;
+    padding: 0;
+}
+
+.mark-btn + .mark-btn {
+    margin-left: 10px;
+}
+
+.mark-img{
+    width: 100%;
 }
