@@ -22,6 +22,12 @@ a {
 button {
     border-radius: 20px;
     padding: 10px 20px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }
 
 .container {
@@ -151,19 +157,25 @@ button {
 }
 
 .cite-text {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .cite-author {
     color: grey;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
-.cite-details__inner {
-    width: 42%;
-    margin: 80px 5% 50px 6%;
+.cite-details {
+    width: 36%;
+    margin: 80px 5% 50px;
 }
+
+.discution {
+    width: 48%;
+    margin: 80px 5% 50px;
+}
+
 
 .cite-img {
     width: 100%;
@@ -179,7 +191,7 @@ button {
 }
 
 
-.panel-btn{
+.panel-btn {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -192,21 +204,103 @@ button {
     font-weight: 400;
     font-size: 20px;
     width: 200px;
-    background: white;
     border: 3px solid black;
 }
 
+.panel-btn__marks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .mark-btn {
-    background: white;
     border: none;
     width: 50px;
     padding: 0;
 }
 
-.mark-btn + .mark-btn {
+.mark-btn+.mark-count {
     margin-left: 10px;
 }
 
-.mark-img{
+
+.mark-count+.mark-btn {
+    margin-left: 10px;
+}
+
+
+.mark-count {
+    font-size: 30px;
+    color: gray;
+    width: 50px;
+    padding: 0;
+    font-weight: 500;
+}
+
+.mark-img {
     width: 100%;
+}
+
+
+.double-panel {
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    max-width: 1500px;
+}
+
+
+.discution__inner {
+    width: 100%;
+}
+
+.chat {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: auto;
+    max-height: 600px;
+}
+
+.chat-message {
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.chat-message+.chat-message {
+    margin-top: 20px;
+}
+
+.message-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.message-senddata {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-author,
+.message-date {
+    color: grey;
+    font-size: 18px;
+}
+
+.send-message-form {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-message {
+    width: 75%;
+    height: 50px;
+    padding: 20px 10px;
+}
+
+.send-btn {
+    width: 20%;
+    height: 50px;
 }
